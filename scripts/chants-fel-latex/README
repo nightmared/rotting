@@ -1,0 +1,5 @@
+format.sh usage : ./format.sh originals-files/ output/
+
+format.sh is a small program that call fort.py on every file in the 'originals-files' folder and generate the corresponding latex file in the output folder. It also generate a file which migt be included in another latex file (the 'include.tex'). Finally, it call pdflatex on main.tex. The generated file is inside the output folder and called main.pdf. Enjoys.
+
+PS: Feel free to modify this, as all my scripts in tha git repo, there are under "Do What You Want" License!

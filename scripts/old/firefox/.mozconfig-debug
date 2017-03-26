@@ -1,0 +1,22 @@
+CC="clang -fcolor-diagnostics"
+CXX="clang++ -fcolor-diagnostics"
+
+mk_add_options MOZ_MAKE_FLAGS=-j8
+mk_add_options MOZ_OBJDIR=ff-obj-debug
+ac_add_options --enable-debug-symbols --enable-debug --enable-tests --enable-profiling
+ac_add_options --enable-application=browser
+ac_add_options --enable-official-branding
+ac_add_options --enable-rust
+ac_add_options --with-system-nspr --with-system-ns --with-system-jpeg --with-system-zlib --with-system-bz2  --with-system-libevent
+ac_add_options --enable-system-hunspell --enable-system-ffi --enable-system-pixman --enable-gstreamer=1.0
+ac_add_options --disable-crashreporter --disable-updater --disable-installer  --enable-skia
+ac_add_options --enable-pulseaudio
+
+export MOZ_TELEMETRY_REPORTING=1
+
+export MOZ_PACKAGE_JSSHELL=1
+
+export MOZ_PROFILER_MODE=combined
+
+mk_add_options AUTOCLOBBER=1
+mk_add_options PYTHON=/usr/bin/python2

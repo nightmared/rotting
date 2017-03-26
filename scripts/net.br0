@@ -1,0 +1,46 @@
+#!/usr/bin/openrc-run
+
+IP=192.168.1.91/24
+GATEWAY=192.168.1.254
+BRIDGE_NAME=br0
+IFNAME=enp3s0
+
+init_bridge() {
+	ip link set dev $IFNAME up
+	brctl addbr $BRIDGE_NAME
+	brctl addif $BRIDGE_NAME $IFNAME
+	ip addr add $IP dev $BRIDGE_NAME
+	ip link set dev $BRIDGE_NAME up
+}
+
+stop_bridge() {
+	ip link set dev $BRIDGE_NAME down
+	ip addr del $IP dev $BRIDGE_NAME
+	brctl delbr $BRIDGE_NAME
+}
+
+depend() {
+	provide net
+}
+
+
+start() {
+	ebegin "Starting some network, nerd :)"
+	hostname "t0b1nux-arch"
+	ip link set dev lo up
+	init_bridge
+	ip route add default via $GATEWAY
+	echo "nameserver 80.67.169.12 
+nameserver 2001:910:800::12
+nameserver 89.234.141.66
+nameserver 2a00:5881:8100:1000::3" > /etc/resolv.conf
+	eend $?
+}
+
+stop() {
+	ebegin "Oh no, internet is no longer accessible !"
+	ip link set dev lo down
+	stop_bridge
+	ip link set dev $IFNAME down
+	eend $?
+}

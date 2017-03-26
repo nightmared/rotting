@@ -1,0 +1,11 @@
+#!/bin/sh
+
+if [ $# == 1 ]
+then
+  DEVICE=$1
+else
+  DEVICE="/dev/sdb3"
+fi
+
+cryptsetup --type luks open $DEVICE crypted
+mount -t btrfs /dev/mapper/crypted /crypted

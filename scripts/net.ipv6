@@ -1,0 +1,21 @@
+#!/usr/bin/openrc-run
+
+IP=192.168.1.91
+REMOTE=216.66.84.42
+TUNNEL=he-ipv6
+IPv6=2001:470:1f12:4a4::2/64
+
+start() {
+	ebegin "IPv6 is cool, so let's use it"
+	ip tunnel add $TUNNEL mode sit remote $REMOTE local $IP ttl 255	
+	ip link set $TUNNEL up
+	ip addr add $IPv6 dev $TUNNEL
+	ip route add ::/0 dev $TUNNEL	
+	eend $?
+}
+
+stop() {
+	ebegin "What ? Please use IPv6, crazy boy !"
+	ip tunnel del $TUNNEL
+	eend $?
+}
