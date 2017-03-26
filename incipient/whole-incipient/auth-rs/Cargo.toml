@@ -1,0 +1,9 @@
+[package]
+name = "incipient-server"
+version = "0.0.1"
+authors = ["Simon THOBY <git@simonthoby.tk>"]
+
+[dependencies]
+nickel = "*"
+rustc-serialize = "*"
+csv = "*"

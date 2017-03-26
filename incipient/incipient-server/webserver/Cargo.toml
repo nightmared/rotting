@@ -1,0 +1,14 @@
+[package]
+name = "webserver"
+version = "0.0.1"
+authors = ["Simon THOBY <git@simonthoby.tk>"]
+
+[dependencies]
+nickel = "*"
+csv = "*"
+sqlite = "0.20.0"
+hyper = "*"
+diesel = "0.5.0"
+diesel_codegen = { version = "0.5.0", default-features = false, features = ["nightly", "postgres"] }
+dotenv = "0.8.0"
+dotenv_macros = "0.8.0"

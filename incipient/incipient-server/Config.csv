@@ -1,0 +1,8 @@
+key,value
+sqlite_db,example.db
+auth_port,8080
+auth_addr,0.0.0.0
+mqtt_server,127.0.0.1
+mqtt_port,1883
+mqtt_keepalive,60
+userid,1

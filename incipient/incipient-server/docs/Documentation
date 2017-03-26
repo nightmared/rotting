@@ -1,0 +1,41 @@
+DOCUMENTATION
+-------------
+
+The process followed by the door to receive messages from our infrastructure is :
+1) The door subscribe to the feed /doors/{doorid} (e.g. doors/17895) at the MQTT broker
+2) The MQTT broker authenticate against the auth server using the credentials provided by the door (the door id and the door password)
+-- At that point, the door can receive messages from the broker
+3) A user endpoint (an mobile application for example) will contact the MQTT broker and send a message
+4) The door will send a result code in a json-formatted string
+
+IMPLEMENTATION DETAILS
+----------------------
+
+We use Mosquitto as MQTT broker and Eclipse-Paho as MQTT client library. We add an http auth plugin such as mosquitto-auth-plug (https://github.com/jpmens/mosquitto-auth-plug) to be able to log on against the auth server
+Both the auth and web server are written in python 3 using the CherryPy framework. (NOTE: We do not exclude the possibility to migrate the auth server to Rust to improve security, provide a more deterministic output (no exceptions thrown all over the application) and use less memory while targeting higher performances)
+The database chosen to provide persistence is SQLite3, which is well supported in any languages, easy to deploy in a container (Docker, LXC or FreeBSD's Jails) and not as resource-hungry as DBMS such as MariaDB or PostgreSQL
+
+Separation of MQTT broker and the authentication server are important to achieve better security.
+
+
+COMMANDS PASSED TO THE DOORS
+----------------------------
+
+The topics that the doors will subscribe to will be doors/{door-id}
+
+Commands will be passed in a succession of comma-separated tuples, where tuples are defined as key:value, ':' acting as a separator between key and value. This gives something like that:
+command:open,speed:0.5
+
+DATABASE
+--------
+
+There is two tables in the database:
+	1) users:
+		id
+		username
+		mail
+		password
+	2) doors:
+		id
+		user
+		password

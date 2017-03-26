@@ -1,0 +1,9 @@
+[package]
+Name = "maze"
+Version = "0.0.1"
+Authors = ["Simon THOBY <simonthoby@live.fr>"]
+
+[dependencies]
+Wayland-client = "0.6.2"
+gl = "*"
+libc = "*"

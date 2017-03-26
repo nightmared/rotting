@@ -1,0 +1,11 @@
+{
+  "mqttConnection": {
+    "host": "127.0.0.1",
+    "port": 1883
+  },
+  "door": {
+    "id": 1,
+    "userId": 1,
+    "password": "hellolog"
+  }
+}

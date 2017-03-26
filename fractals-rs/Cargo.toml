@@ -1,0 +1,9 @@
+[package]
+name = "fractals-rs"
+version = "0.0.1"
+authors = ["Simon THOBY <git@simonthoby.tk>"]
+
+[dependencies]
+gl = "*"
+libc = "*"
+glutin = "*"

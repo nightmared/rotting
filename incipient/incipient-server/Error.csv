@@ -1,0 +1,18 @@
+errcode,description,httpstatus
+100,Generic DB error,500
+101,Could not open DB,500
+103,Could not perform query,500
+200,Invalid request,400
+201,Email invalid,404
+202,Password too short,400
+203,Could not create user,500
+204,The given user does not exist,404
+205,User already exist,400
+206,Invalid credentials,401
+207,Credentials does not match the given door,401
+208,Missing field(s) in the request,400
+209,Invalid topic,401
+300,Generic door exception,500
+301,This door does not exist,404
+302,The password is invalid for this door,401
+500,Unknown error,500

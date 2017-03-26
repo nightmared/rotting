@@ -1,0 +1,15 @@
+{
+  "name": "node-webserver",
+  "version": "0.0.1",
+  "description": "WebServer for incipient",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Simon THOBY <dev@simonthoby.tk>",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "mqtt": "^1.8.0"
+  }
+}
