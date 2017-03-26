@@ -1,0 +1,9 @@
+[package]
+name = "parser-rs"
+version = "0.0.1"
+authors = ["Simon THOBY <git@simonthoby.tk>"]
+
+[dependencies]
+regex = "0.1.69"
+lazy_static = "0.2.1"
+getopts = "0.2.14"
