@@ -1,0 +1,10 @@
+cmake_minimum_required (VERSION 3.8.0)
+project (neural-net)
+set(EXECUTABLE_OUTPUT_PATH bin)
+set(CMAKE_C_STANDARD 11)
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Wall -fpic")
+
+file(GLOB_RECURSE source_files src/*)
+add_executable (neural-net ${source_files})
+target_link_libraries(neural-net m)
