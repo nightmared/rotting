@@ -1,0 +1,13 @@
+drwxr-xr-x	t0b1nux/users	usr/
+drwxr-xr-x	t0b1nux/users	usr/bin/
+-rwxr-xr-x	t0b1nux/users	usr/bin/pstat
+drwxr-xr-x	t0b1nux/users	usr/include/
+drwxr-xr-x	t0b1nux/users	usr/include/pstat/
+-rw-r--r--	t0b1nux/users	usr/include/pstat/libpstat.h
+drwxr-xr-x	t0b1nux/users	usr/include/pstat/os/
+-rw-r--r--	t0b1nux/users	usr/include/pstat/os/common.h
+-rw-r--r--	t0b1nux/users	usr/include/pstat/os/linux.h
+drwxr-xr-x	t0b1nux/users	usr/lib/
+lrwxrwxrwx	t0b1nux/users	usr/lib/libpstat.so -> libpstat.so.1
+lrwxrwxrwx	t0b1nux/users	usr/lib/libpstat.so.1 -> libpstat.so.1.0.2
+-rwxr-xr-x	t0b1nux/users	usr/lib/libpstat.so.1.0.2

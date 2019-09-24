@@ -1,0 +1,41 @@
+# Description: Mesa 3D Graphics Library
+# URL: http://www.mesa3d.org
+# Maintainer: Simon THOBY, simonthoby at live dot fr
+# Depends on: elfutils expat libdrm libvdpau llvm xorg-dri3proto xorg-glproto xorg-libxdamage xorg-libxshmfence xorg-libxvmc xorg-presentproto xorg-libxxf86vm mako git
+
+name=mesa3d
+version=git
+release=1
+source=()
+
+build() {
+	cd $PKGMK_SOURCE_DIR
+	if [ ! -d $name ]; then
+		git clone git://anongit.freedesktop.org/mesa/mesa $name
+	else
+		cd $name && git pull
+	fi
+	cp -r $PKGMK_SOURCE_DIR/$name $SRC
+	
+	cd $SRC/$name
+
+	./autogen.sh \
+		--prefix=/usr \
+		--sysconfdir=/etc \
+		--enable-gallium-llvm \
+		--enable-gbm \
+		--enable-gles1 \
+		--enable-gles2 \
+		--enable-glx-tls \
+		--enable-osmesa \
+		--enable-texture-float \
+		--enable-xa \
+		--enable-vdpau \
+		--enable-llvm-shared-libs \
+		--with-dri-drivers=radeon,swrast \
+		--with-egl-platforms=x11,wayland,drm \
+		--with-gallium-drivers=swrast,radeonsi
+
+	make
+	make DESTDIR=$PKG install
+}

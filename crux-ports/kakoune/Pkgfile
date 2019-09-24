@@ -1,0 +1,24 @@
+# Description:	Experiment for a better code editor.
+# URL:	https://github.com/mawww/kakoune
+# Maintainer:	Simon THOBY, simonthoby at live dot fr
+# Depends on:	boost git
+
+name=kakoune
+version=git
+release=2
+source=()
+
+build() {
+	cd $PKGMK_SOURCE_DIR
+	if [ ! -d $name ]; then
+		git clone git://github.com/mawww/$name $name
+	else
+		cd $name && git pull
+	fi
+	cp -r $PKGMK_SOURCE_DIR/$name $SRC
+	
+	cd $SRC/$name/src
+	
+	make
+	make DESTDIR=$PKG PREFIX=/usr install
+}

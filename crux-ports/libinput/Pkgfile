@@ -1,0 +1,26 @@
+# Description: input device management and event handling library
+# URL: http://www.freedesktop.org/wiki/Software/libinput/
+# Maintainer: Simon THOBY, simonthoby at live dot fr
+# Depends on: git
+
+name=libinput
+version=git
+release=1
+source=()
+
+build() {
+	cd $PKGMK_SOURCE_DIR
+	if [ ! -d $name ]; then
+		git clone git://anongit.freedesktop.org/wayland/$name $name
+	else
+		cd $name && git pull
+	fi
+	cp -r $PKGMK_SOURCE_DIR/$name $SRC
+	
+	cd $SRC/$name
+
+	./autogen.sh --prefix=/usr --disable-libwacom
+
+	make
+	make DESTDIR=$PKG install
+}

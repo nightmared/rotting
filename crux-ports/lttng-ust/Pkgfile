@@ -1,0 +1,16 @@
+# Description:	The LTTng User Space Tracing (LTTng-UST) library allows any C/C++ application to be instrumented for and traced by LTTng.
+# URL:	http://lttng.org
+# Maintainer:	Simon THOBY, simonthoby at live dot fr
+# Depend on: liburcu, autoconf, perl, libtool
+
+name=lttng-ust
+version=2.7.1
+release=1
+source=(http://lttng.org/files/$name/$name-$version.tar.bz2)
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr
+	make
+	make DESTDIR=$PKG install
+}

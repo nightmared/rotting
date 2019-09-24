@@ -1,0 +1,25 @@
+drwxr-xr-x	t0b1nux/users	usr/
+drwxr-xr-x	t0b1nux/users	usr/bin/
+-rwxr-xr-x	t0b1nux/users	usr/bin/vscclient
+drwxr-xr-x	t0b1nux/users	usr/include/
+drwxr-xr-x	t0b1nux/users	usr/include/cacard/
+-rw-r--r--	t0b1nux/users	usr/include/cacard/cac.h
+-rw-r--r--	t0b1nux/users	usr/include/cacard/card_7816.h
+-rw-r--r--	t0b1nux/users	usr/include/cacard/card_7816t.h
+-rw-r--r--	t0b1nux/users	usr/include/cacard/eventt.h
+-rw-r--r--	t0b1nux/users	usr/include/cacard/libcacard.h
+-rw-r--r--	t0b1nux/users	usr/include/cacard/vcard.h
+-rw-r--r--	t0b1nux/users	usr/include/cacard/vcard_emul.h
+-rw-r--r--	t0b1nux/users	usr/include/cacard/vcard_emul_type.h
+-rw-r--r--	t0b1nux/users	usr/include/cacard/vcardt.h
+-rw-r--r--	t0b1nux/users	usr/include/cacard/vevent.h
+-rw-r--r--	t0b1nux/users	usr/include/cacard/vreader.h
+-rw-r--r--	t0b1nux/users	usr/include/cacard/vreadert.h
+-rw-r--r--	t0b1nux/users	usr/include/cacard/vscard_common.h
+drwxr-xr-x	t0b1nux/users	usr/lib/
+-rwxr-xr-x	t0b1nux/users	usr/lib/libcacard.la
+lrwxrwxrwx	t0b1nux/users	usr/lib/libcacard.so -> libcacard.so.0.0.0
+lrwxrwxrwx	t0b1nux/users	usr/lib/libcacard.so.0 -> libcacard.so.0.0.0
+-rwxr-xr-x	t0b1nux/users	usr/lib/libcacard.so.0.0.0
+drwxr-xr-x	t0b1nux/users	usr/lib/pkgconfig/
+-rw-r--r--	t0b1nux/users	usr/lib/pkgconfig/libcacard.pc

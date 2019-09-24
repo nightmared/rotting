@@ -1,0 +1,25 @@
+# Description:	Camlp4 tool  
+# URL:	https://github.com/ocaml/camlp4
+# Maintainer:	Simon THOBY, simonthoby at live dot fr
+# Depends on:	git
+
+name=camlp4
+version=git
+release=1
+source=()
+
+build() {
+	cd $PKGMK_SOURCE_DIR
+	if [ ! -d $name ]; then
+		git clone git://github.com/ocaml/$name $name -b 4.02
+	else
+		cd $name && git pull
+	fi
+	cp -r $PKGMK_SOURCE_DIR/$name $SRC
+
+	cd $SRC/$name
+
+	./configure --bindir=/usr/bin --libdir=/usr/lib/ocaml --pkgdir=$PKG
+	make
+	make DESTDIR=$PKG install
+}

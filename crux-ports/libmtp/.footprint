@@ -1,0 +1,40 @@
+drwxr-xr-x	t0b1nux/users	usr/
+drwxr-xr-x	t0b1nux/users	usr/bin/
+-rwxr-xr-x	t0b1nux/users	usr/bin/mtp-albumart
+-rwxr-xr-x	t0b1nux/users	usr/bin/mtp-albums
+-rwxr-xr-x	t0b1nux/users	usr/bin/mtp-connect
+lrwxrwxrwx	t0b1nux/users	usr/bin/mtp-delfile -> mtp-connect
+-rwxr-xr-x	t0b1nux/users	usr/bin/mtp-detect
+-rwxr-xr-x	t0b1nux/users	usr/bin/mtp-emptyfolders
+-rwxr-xr-x	t0b1nux/users	usr/bin/mtp-files
+-rwxr-xr-x	t0b1nux/users	usr/bin/mtp-filetree
+-rwxr-xr-x	t0b1nux/users	usr/bin/mtp-folders
+-rwxr-xr-x	t0b1nux/users	usr/bin/mtp-format
+lrwxrwxrwx	t0b1nux/users	usr/bin/mtp-getfile -> mtp-connect
+-rwxr-xr-x	t0b1nux/users	usr/bin/mtp-getplaylist
+-rwxr-xr-x	t0b1nux/users	usr/bin/mtp-hotplug
+lrwxrwxrwx	t0b1nux/users	usr/bin/mtp-newfolder -> mtp-connect
+-rwxr-xr-x	t0b1nux/users	usr/bin/mtp-newplaylist
+-rwxr-xr-x	t0b1nux/users	usr/bin/mtp-playlists
+-rwxr-xr-x	t0b1nux/users	usr/bin/mtp-reset
+lrwxrwxrwx	t0b1nux/users	usr/bin/mtp-sendfile -> mtp-connect
+lrwxrwxrwx	t0b1nux/users	usr/bin/mtp-sendtr -> mtp-connect
+-rwxr-xr-x	t0b1nux/users	usr/bin/mtp-thumb
+-rwxr-xr-x	t0b1nux/users	usr/bin/mtp-tracks
+-rwxr-xr-x	t0b1nux/users	usr/bin/mtp-trexist
+drwxr-xr-x	t0b1nux/users	usr/include/
+-rw-r--r--	t0b1nux/users	usr/include/libmtp.h
+drwxr-xr-x	t0b1nux/users	usr/lib/
+-rw-r--r--	t0b1nux/users	usr/lib/libmtp.a
+-rwxr-xr-x	t0b1nux/users	usr/lib/libmtp.la
+lrwxrwxrwx	t0b1nux/users	usr/lib/libmtp.so -> libmtp.so.9.3.0
+lrwxrwxrwx	t0b1nux/users	usr/lib/libmtp.so.9 -> libmtp.so.9.3.0
+-rwxr-xr-x	t0b1nux/users	usr/lib/libmtp.so.9.3.0
+drwxr-xr-x	t0b1nux/users	usr/lib/pkgconfig/
+-rw-r--r--	t0b1nux/users	usr/lib/pkgconfig/libmtp.pc
+drwxr-xr-x	t0b1nux/users	usr/lib/udev/
+drwxr-xr-x	t0b1nux/users	usr/lib/udev/hwdb.d/
+-rw-r--r--	t0b1nux/users	usr/lib/udev/hwdb.d/69-libmtp.hwdb
+-rwxr-xr-x	t0b1nux/users	usr/lib/udev/mtp-probe
+drwxr-xr-x	t0b1nux/users	usr/lib/udev/rules.d/
+-rw-r--r--	t0b1nux/users	usr/lib/udev/rules.d/69-libmtp.rules

@@ -1,0 +1,24 @@
+# Description: OS-agnostic process stat
+# URL: https://github.com/jcnelson/libpstat
+# Maintainer: Simon THOBY, crux at simonthoby dot tk
+# Depends on :
+
+name=libpstat
+version=git
+release=1
+source=()
+
+build() {
+	cd $PKGMK_SOURCE_DIR
+	if [ ! -d $name ]; then
+		git clone https://github.com/jcnelson/$name.git $name
+	else
+		cd $name && git pull
+	fi
+	cp -r $PKGMK_SOURCE_DIR/$name $SRC
+	
+	cd $SRC/$name
+	unset CFLAGS
+	make
+	PREFIX=/usr DESTDIR=$PKG make install
+}

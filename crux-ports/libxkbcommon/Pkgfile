@@ -1,0 +1,14 @@
+# Description:	xkbcommon, a keyboard handling library
+# Maintainer:	Simon THOBY, simonthoby at live dot fr
+
+name=libxkbcommon
+version=0.5.0
+release=1
+source=(http://xkbcommon.org/download/libxkbcommon-0.5.0.tar.xz)
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr
+	make 
+	make install DESTDIR=$PKG
+}

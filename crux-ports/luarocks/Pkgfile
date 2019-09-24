@@ -1,0 +1,26 @@
+# Description:	package manager for Lua modules
+# URL:	https://luarocks.org/
+# Maintainer:	Simon THOBY, simonthoby at live dot fr
+# Depends on:	curl
+
+name=luarocks
+version=git
+release=1
+source=()
+
+build() {
+	cd $PKGMK_SOURCE_DIR
+	if [ ! -d $name ]; then
+	git clone git://github.com/keplerproject/$name.git
+	else
+		cd $name && git pull
+	fi
+	cp -r $PKGMK_SOURCE_DIR/$name $SRC
+	
+	cd $SRC/$name
+
+	git checkout master
+	./configure --prefix=/usr --sysconfdir=/etc/luarocks
+	make
+	make DESTDIR=$PKG install
+}

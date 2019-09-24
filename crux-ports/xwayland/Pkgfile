@@ -1,0 +1,23 @@
+# Description: X Window System server for Wayland
+# URL: http://xorg.freedesktop.org
+# Maintainer: Simon THOBY, simonthoby at live dot fr
+# Depends on: xorg-server wayland
+
+name=xwayland
+version=1.18.0
+release=1
+source=(http://xorg.freedesktop.org/releases/individual/xserver/xorg-server-$version.tar.bz2)
+
+build() {
+	cd xorg-server-$version
+	
+	./configure --prefix=/usr --disable-docs --disable-devel-docs \
+		--enable-xwayland --disable-xorg --disable-xvfb --disable-xnest \
+		--disable-xquartz --disable-xwin
+
+	make
+	make DESTDIR=$PKG install
+
+	rm -r $PKG/usr/share
+	rm -r $PKG/usr/lib
+}

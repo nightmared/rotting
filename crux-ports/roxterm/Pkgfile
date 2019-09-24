@@ -1,0 +1,21 @@
+# Description:	A terminal emulator for power-users
+# URL:		http://roxterm.sourceforge.net
+# Maintainer:	Simon THOBY, simonthoby at live dot fr
+# Depends on:	vte gtk3 gtk2 dbus vte-gtk3 dbus-glib
+
+name=roxterm
+version=3.3.1
+release=1
+source=(http://downloads.sourceforge.net/project/$name/$name/$version/$name-$version.tar.xz)
+
+build() {
+	cd $name-$version
+	mscript_args="--prefix=/usr --destdir=$PKG --disable-translations --disable-git --no-lock XMLTOMAN="
+	python ./mscript.py configure $mscript_args
+	python ./mscript.py build $mscript_args
+	python ./mscript.py install $mscript_args
+	if [ ! -f /etc/machine-id ]
+	then
+		echo "e75ef12fe5ae6d1c5b4b614b5465a1dc" > $PKG/etc/machine-id
+	fi
+}

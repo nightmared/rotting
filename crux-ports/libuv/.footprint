@@ -1,0 +1,16 @@
+drwxr-xr-x	t0b1nux/users	usr/
+drwxr-xr-x	t0b1nux/users	usr/include/
+-rw-r--r--	t0b1nux/users	usr/include/uv-errno.h
+-rw-r--r--	t0b1nux/users	usr/include/uv-linux.h
+-rw-r--r--	t0b1nux/users	usr/include/uv-threadpool.h
+-rw-r--r--	t0b1nux/users	usr/include/uv-unix.h
+-rw-r--r--	t0b1nux/users	usr/include/uv-version.h
+-rw-r--r--	t0b1nux/users	usr/include/uv.h
+drwxr-xr-x	t0b1nux/users	usr/lib/
+-rw-r--r--	t0b1nux/users	usr/lib/libuv.a
+-rwxr-xr-x	t0b1nux/users	usr/lib/libuv.la
+lrwxrwxrwx	t0b1nux/users	usr/lib/libuv.so -> libuv.so.1.0.0
+lrwxrwxrwx	t0b1nux/users	usr/lib/libuv.so.1 -> libuv.so.1.0.0
+-rwxr-xr-x	t0b1nux/users	usr/lib/libuv.so.1.0.0
+drwxr-xr-x	t0b1nux/users	usr/lib/pkgconfig/
+-rw-r--r--	t0b1nux/users	usr/lib/pkgconfig/libuv.pc

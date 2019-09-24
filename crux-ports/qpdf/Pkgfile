@@ -1,0 +1,20 @@
+# Description:	Utility that does structural, content-preserving transformations on PDF files
+# URL:	http://qpdf.sourceforge.net/
+# Maintainer:	Simon THOBY, simonthoby at live dot fr
+# Depends on:	libpcre zlib
+
+name=qpdf
+version=6.0.0
+release=1
+source=(https://github.com/$name/$name/archive/release-$name-$version.tar.gz)
+
+build() {
+	cd $name-release-$name-$version
+	./autogen.sh
+	./configure --prefix=/usr 
+	make
+	touch doc/qpdf-manual.html
+	touch doc/qpdf-manual.pdf
+	make DESTDIR=$PKG install
+	rm -rf $PKG/usr/share
+}

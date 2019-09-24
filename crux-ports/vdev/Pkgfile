@@ -1,0 +1,27 @@
+# Description: a device-file manager and filesystem
+# URL: https://git.devuan.org/pkgs-utopia-substitution/vdev
+# Maintainer: Simon THOBY, simonthoby at live dot fr
+# Depends on: git fuse libpstat fskit
+
+name=vdev
+version=git
+release=1
+source=()
+
+build() {
+	cd $PKGMK_SOURCE_DIR
+	if [ ! -d $name ]; then
+		git clone https://github.com/jcnelson/$name.git $name
+	else
+		cd $name && git pull
+	fi
+	cp -r $PKGMK_SOURCE_DIR/$name $SRC
+	
+	cd $SRC/$name
+
+	make DESTDIR=$PKG PREFIX= 
+	for i in hwdb vdevd example fs; do
+		make -C $i DESTDIR=$PKG PREFIX= install
+	done
+	make -C libudev-compat install DESTDIR=$PKG PREFIX= INCLUDE_PREFIX=/usr
+}

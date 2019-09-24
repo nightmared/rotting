@@ -1,0 +1,17 @@
+drwxr-xr-x	t0b1nux/users	usr/
+drwxr-xr-x	t0b1nux/users	usr/local/
+drwxr-xr-x	t0b1nux/users	usr/local/bin/
+-rwxr-xr-x	t0b1nux/users	usr/local/bin/unterm
+-rwxr-xr-x	t0b1nux/users	usr/local/bin/vterm-ctrl
+-rwxr-xr-x	t0b1nux/users	usr/local/bin/vterm-dump
+drwxr-xr-x	t0b1nux/users	usr/local/include/
+-rw-r--r--	t0b1nux/users	usr/local/include/vterm.h
+-rw-r--r--	t0b1nux/users	usr/local/include/vterm_keycodes.h
+drwxr-xr-x	t0b1nux/users	usr/local/lib/
+-rw-r--r--	t0b1nux/users	usr/local/lib/libvterm.a
+-rwxr-xr-x	t0b1nux/users	usr/local/lib/libvterm.la
+lrwxrwxrwx	t0b1nux/users	usr/local/lib/libvterm.so -> libvterm.so.0.0.0
+lrwxrwxrwx	t0b1nux/users	usr/local/lib/libvterm.so.0 -> libvterm.so.0.0.0
+-rwxr-xr-x	t0b1nux/users	usr/local/lib/libvterm.so.0.0.0
+drwxr-xr-x	t0b1nux/users	usr/local/lib/pkgconfig/
+-rw-r--r--	t0b1nux/users	usr/local/lib/pkgconfig/vterm.pc

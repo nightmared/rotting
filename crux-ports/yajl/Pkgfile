@@ -1,0 +1,17 @@
+# Description:	Yet Another JSON Library
+# Maintainer:	Simon THOBY, simonthoby at live dot fr
+# Depends on:	git cmake
+
+author=lloyd
+name=yajl
+version=2.1.0
+release=1
+source=(http://github.com/lloyd/yajl/tarball/$version)
+
+build() {
+	tar xf $version
+	cd $author-$name-66cb08c
+	cmake . -Wno-dev -DCMAKE_INSTALL_PREFIX=/usr
+	make 
+	make install DESTDIR=$PKG
+}

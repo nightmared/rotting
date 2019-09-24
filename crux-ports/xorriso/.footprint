@@ -1,0 +1,17 @@
+drwxr-xr-x	t0b1nux/users	usr/
+drwxr-xr-x	t0b1nux/users	usr/bin/
+lrwxrwxrwx	t0b1nux/users	usr/bin/osirrox -> xorriso
+lrwxrwxrwx	t0b1nux/users	usr/bin/xorrecord -> xorriso
+-rwxr-xr-x	t0b1nux/users	usr/bin/xorriso
+-rwxr-xr-x	t0b1nux/users	usr/bin/xorriso-tcltk
+lrwxrwxrwx	t0b1nux/users	usr/bin/xorrisofs -> xorriso
+drwxr-xr-x	t0b1nux/users	usr/share/
+drwxr-xr-x	t0b1nux/users	usr/share/info/
+-rw-r--r--	t0b1nux/users	usr/share/info/xorrecord.info
+-rw-r--r--	t0b1nux/users	usr/share/info/xorriso.info
+-rw-r--r--	t0b1nux/users	usr/share/info/xorrisofs.info
+drwxr-xr-x	t0b1nux/users	usr/share/man/
+drwxr-xr-x	t0b1nux/users	usr/share/man/man1/
+-rw-r--r--	t0b1nux/users	usr/share/man/man1/xorrecord.1.gz
+-rw-r--r--	t0b1nux/users	usr/share/man/man1/xorriso.1.gz
+-rw-r--r--	t0b1nux/users	usr/share/man/man1/xorrisofs.1.gz

@@ -1,0 +1,18 @@
+drwxr-xr-x	t0b1nux/users	sbin/
+lrwxrwxrwx	t0b1nux/users	sbin/dump.f2fs -> fsck.f2fs
+-rwxr-xr-x	t0b1nux/users	sbin/f2fstat
+-rwxr-xr-x	t0b1nux/users	sbin/fibmap.f2fs
+-rwxr-xr-x	t0b1nux/users	sbin/fsck.f2fs
+-rwxr-xr-x	t0b1nux/users	sbin/mkfs.f2fs
+-rwxr-xr-x	t0b1nux/users	sbin/parse.f2fs
+drwxr-xr-x	t0b1nux/users	usr/
+drwxr-xr-x	t0b1nux/users	usr/lib/
+-rw-r--r--	t0b1nux/users	usr/lib/libf2fs.a
+-rwxr-xr-x	t0b1nux/users	usr/lib/libf2fs.la
+lrwxrwxrwx	t0b1nux/users	usr/lib/libf2fs.so -> libf2fs.so.0.0.0
+lrwxrwxrwx	t0b1nux/users	usr/lib/libf2fs.so.0 -> libf2fs.so.0.0.0
+-rwxr-xr-x	t0b1nux/users	usr/lib/libf2fs.so.0.0.0
+drwxr-xr-x	t0b1nux/users	usr/share/
+drwxr-xr-x	t0b1nux/users	usr/share/man/
+drwxr-xr-x	t0b1nux/users	usr/share/man/man8/
+-rw-r--r--	t0b1nux/users	usr/share/man/man8/mkfs.f2fs.8.gz

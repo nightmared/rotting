@@ -1,0 +1,20 @@
+#/bin/sh
+
+file=REPO
+
+if [ -f $file ]; then
+	mv $file $file.old
+fi
+
+for i in $(git ls-tree -t -r HEAD --name-only | grep -v REPO | grep -v '^configure$')
+do
+	if [ -d "$i" ]
+	then
+		echo "d:$i" >> $file
+	else
+		md5sum=$(md5sum $i | cut -f1 -d' ')
+		if [ -n "$md5sum" ]; then
+			echo "f:$md5sum:$i" >> $file
+		fi
+	fi
+done

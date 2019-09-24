@@ -1,0 +1,43 @@
+drwxr-xr-x	t0b1nux/users	usr/
+drwxr-xr-x	t0b1nux/users	usr/bin/
+-rwxr-xr-x	t0b1nux/users	usr/bin/wayland-scanner
+drwxr-xr-x	t0b1nux/users	usr/include/
+-rw-r--r--	t0b1nux/users	usr/include/wayland-client-core.h
+-rw-r--r--	t0b1nux/users	usr/include/wayland-client-protocol.h
+-rw-r--r--	t0b1nux/users	usr/include/wayland-client.h
+-rw-r--r--	t0b1nux/users	usr/include/wayland-cursor.h
+-rw-r--r--	t0b1nux/users	usr/include/wayland-egl-core.h
+-rw-r--r--	t0b1nux/users	usr/include/wayland-egl.h
+-rw-r--r--	t0b1nux/users	usr/include/wayland-server-core.h
+-rw-r--r--	t0b1nux/users	usr/include/wayland-server-protocol.h
+-rw-r--r--	t0b1nux/users	usr/include/wayland-server.h
+-rw-r--r--	t0b1nux/users	usr/include/wayland-util.h
+-rw-r--r--	t0b1nux/users	usr/include/wayland-version.h
+drwxr-xr-x	t0b1nux/users	usr/lib/
+-rw-r--r--	t0b1nux/users	usr/lib/libwayland-client.a
+-rwxr-xr-x	t0b1nux/users	usr/lib/libwayland-client.la
+lrwxrwxrwx	t0b1nux/users	usr/lib/libwayland-client.so -> libwayland-client.so.0.3.0
+lrwxrwxrwx	t0b1nux/users	usr/lib/libwayland-client.so.0 -> libwayland-client.so.0.3.0
+-rwxr-xr-x	t0b1nux/users	usr/lib/libwayland-client.so.0.3.0
+-rw-r--r--	t0b1nux/users	usr/lib/libwayland-cursor.a
+-rwxr-xr-x	t0b1nux/users	usr/lib/libwayland-cursor.la
+lrwxrwxrwx	t0b1nux/users	usr/lib/libwayland-cursor.so -> libwayland-cursor.so.0.0.0
+lrwxrwxrwx	t0b1nux/users	usr/lib/libwayland-cursor.so.0 -> libwayland-cursor.so.0.0.0
+-rwxr-xr-x	t0b1nux/users	usr/lib/libwayland-cursor.so.0.0.0
+-rw-r--r--	t0b1nux/users	usr/lib/libwayland-server.a
+-rwxr-xr-x	t0b1nux/users	usr/lib/libwayland-server.la
+lrwxrwxrwx	t0b1nux/users	usr/lib/libwayland-server.so -> libwayland-server.so.0.1.0
+lrwxrwxrwx	t0b1nux/users	usr/lib/libwayland-server.so.0 -> libwayland-server.so.0.1.0
+-rwxr-xr-x	t0b1nux/users	usr/lib/libwayland-server.so.0.1.0
+drwxr-xr-x	t0b1nux/users	usr/lib/pkgconfig/
+-rw-r--r--	t0b1nux/users	usr/lib/pkgconfig/wayland-client.pc
+-rw-r--r--	t0b1nux/users	usr/lib/pkgconfig/wayland-cursor.pc
+-rw-r--r--	t0b1nux/users	usr/lib/pkgconfig/wayland-scanner.pc
+-rw-r--r--	t0b1nux/users	usr/lib/pkgconfig/wayland-server.pc
+drwxr-xr-x	t0b1nux/users	usr/share/
+drwxr-xr-x	t0b1nux/users	usr/share/aclocal/
+-rw-r--r--	t0b1nux/users	usr/share/aclocal/wayland-scanner.m4
+drwxr-xr-x	t0b1nux/users	usr/share/wayland/
+-rw-r--r--	t0b1nux/users	usr/share/wayland/wayland-scanner.mk
+-rw-r--r--	t0b1nux/users	usr/share/wayland/wayland.dtd
+-rw-r--r--	t0b1nux/users	usr/share/wayland/wayland.xml

@@ -1,0 +1,52 @@
+# Description: Fast CPU emulator and virtualizer for all supported platforms
+# URL:         http://www.qemu.org
+# Maintainer:  Thomas Penteker, tek at serverop dot de
+# Packager:    Lucas Hazel, lucas at die dot net dot au
+# Depends on:  libsdl glib spice
+# Nice to have: libseccomp libiscsi libusb usbredir
+ 
+name=qemu-all
+version=git
+release=1
+source=()
+
+build() {
+	cd $PKGMK_SOURCE_DIR
+	if [ ! -d $name ]; then
+		git clone git://git.qemu-project.org/qemu.git $name
+	else
+		cd $name && git pull
+	fi
+	cp -r $PKGMK_SOURCE_DIR/$name $SRC
+	cd $SRC/$name
+
+	git submodule update --init dtc 
+	./configure --prefix=/usr \
+		--cc="${CC:=gcc}" \
+		--host-cc="${CC:=gcc}" \
+		--sysconfdir=/etc \
+		--disable-docs \
+		--libexecdir=/usr/lib/qemu \
+		--enable-gtk \
+		--enable-spice \
+		--localstatedir=/var
+
+	# fix include issues with libcap
+	sed -i -e '/#include "qemu\/xattr.h"/d' \
+	 -e 's|#include <sys/resource.h>|#include <sys/resource.h>\r\n#include "qemu\/xattr.h"|g' \
+	fsdev/virtfs-proxy-helper.c
+
+	make ${MAKEFLAGS:=}
+	make DESTDIR=$PKG install
+
+	make qemu.1 qemu-img.1 qemu-nbd.8
+	install -D -m 644 qemu.1 $PKG/usr/share/man1/qemu.1
+	install -D -m 644 qemu-img.1 $PKG/usr/share/man1/qemu-img.1
+	install -D -m 644 qemu-nbd.8 $PKG/usr/share/man8/qemu-nbd.8
+
+	install -d $PKG/etc/udev/rules.d/
+	echo 'KERNEL=="kvm", NAME="kvm", OWNER="root", GROUP="kvm", MODE="0660"' > \
+	$PKG/etc/udev/rules.d/60-kvm.rules
+
+	rm -rf $PKG/usr/share/locale
+}

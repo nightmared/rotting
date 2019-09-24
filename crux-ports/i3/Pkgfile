@@ -1,0 +1,17 @@
+# Description:	the improved tiling wm
+# URL:	http://i3wm.org/
+# Maintainer:	Simon THOBY, simonthoby at live dot fr
+# Depends on:	yajl xorg-libxrandr xorg-server startup-notification libev xorg-libxcb xorg-xcb-util-cursor xorg-xkbui xorg-xkbmap libxkbcommon xorg-xcb-util-keysyms xorg-xcb-util-wm dmenu
+
+name=i3
+version=4.11
+release=3
+source=(http://i3wm.org/downloads/$name-$version.tar.bz2)
+
+build() {
+	cd $name-$version
+	make PREFIX=/usr
+	make DESTDIR=$PKG install
+	mkdir -p $PKG/usr/share/man/man1
+	for i in $(find man -type f -name '*.1') ; do install -m 0644 $i $PKG/usr/share/man/man1/$(basename $i) ; done
+}

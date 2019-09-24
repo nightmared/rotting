@@ -1,0 +1,16 @@
+# Description: The PyPA recommended tool for installing Python packages
+# URL:         https://pip.pypa.io/
+# Maintainer:  Kristian Lehmann, email at zero-io dot net
+# Depends on:  python3 python3-setuptools
+
+name=python3-setuptools
+version=16.0
+release=1
+source=(http://pypi.python.org/packages/source/s/setuptools/setuptools-${version}.tar.gz)
+
+build() {
+  cd setuptools-$version
+  python3 setup.py build
+  python3 setup.py install --prefix=/usr --root=$PKG
+  rm $PKG/usr/bin/easy_install
+}

@@ -1,0 +1,15 @@
+# Description:	Generates status bar with i3bar, dzen2 or xmodbar
+# URL:	http://i3.zekjur.net/i3status/
+# Maintainer:	Simon THOBY, simonthoby at live dot fr
+# Depends on:	i3 libconfuse wireless-tools
+
+name=i3status
+version=2.9
+release=1
+source=(http://i3.zekjur.net/i3status/$name-$version.tar.bz2)
+
+build() {
+	cd $name-$version
+	make
+	make DESTDIR=$PKG install
+}

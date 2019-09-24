@@ -1,0 +1,31 @@
+# Description: reference implementation of a Wayland compositor
+# URL: http://wayland.freedesktop.org/
+# Maintainer: Simon THOBY, simonthoby at live dot fr
+# Depends on: git xwayland
+
+name=weston
+version=git
+release=1
+source=()
+
+build() {
+	cd $PKGMK_SOURCE_DIR
+	if [ ! -d $name ]; then
+		git clone git://anongit.freedesktop.org/wayland/$name $name
+	else
+		cd $name && git pull
+	fi
+	cp -r $PKGMK_SOURCE_DIR/$name $SRC
+	
+	cd $SRC/$name
+
+	./autogen.sh --prefix=/usr --enable-xwayland \
+		--enable-drm-compositor --enable-wayland-compositor \
+		--enable-x11-compositor --disable-rpi-compositor \
+		--enable-clients --disable-libunwind \
+		--enable-weston-launch --enable-demo-clients-install \
+		--enable-headless-compositor
+
+	make
+	make DESTDIR=$PKG install
+}

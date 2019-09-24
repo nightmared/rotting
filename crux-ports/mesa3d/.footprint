@@ -1,0 +1,101 @@
+drwxr-xr-x	t0b1nux/users	etc/
+-rw-r--r--	t0b1nux/users	etc/drirc
+drwxr-xr-x	t0b1nux/users	usr/
+drwxr-xr-x	t0b1nux/users	usr/include/
+drwxr-xr-x	t0b1nux/users	usr/include/EGL/
+-rw-r--r--	t0b1nux/users	usr/include/EGL/egl.h
+-rw-r--r--	t0b1nux/users	usr/include/EGL/eglext.h
+-rw-r--r--	t0b1nux/users	usr/include/EGL/eglextchromium.h
+-rw-r--r--	t0b1nux/users	usr/include/EGL/eglmesaext.h
+-rw-r--r--	t0b1nux/users	usr/include/EGL/eglplatform.h
+drwxr-xr-x	t0b1nux/users	usr/include/GL/
+-rw-r--r--	t0b1nux/users	usr/include/GL/gl.h
+-rw-r--r--	t0b1nux/users	usr/include/GL/gl_mangle.h
+-rw-r--r--	t0b1nux/users	usr/include/GL/glcorearb.h
+-rw-r--r--	t0b1nux/users	usr/include/GL/glext.h
+-rw-r--r--	t0b1nux/users	usr/include/GL/glx.h
+-rw-r--r--	t0b1nux/users	usr/include/GL/glx_mangle.h
+-rw-r--r--	t0b1nux/users	usr/include/GL/glxext.h
+drwxr-xr-x	t0b1nux/users	usr/include/GL/internal/
+-rw-r--r--	t0b1nux/users	usr/include/GL/internal/dri_interface.h
+-rw-r--r--	t0b1nux/users	usr/include/GL/osmesa.h
+-rw-r--r--	t0b1nux/users	usr/include/GL/wglext.h
+drwxr-xr-x	t0b1nux/users	usr/include/GLES/
+-rw-r--r--	t0b1nux/users	usr/include/GLES/egl.h
+-rw-r--r--	t0b1nux/users	usr/include/GLES/gl.h
+-rw-r--r--	t0b1nux/users	usr/include/GLES/glext.h
+-rw-r--r--	t0b1nux/users	usr/include/GLES/glplatform.h
+drwxr-xr-x	t0b1nux/users	usr/include/GLES2/
+-rw-r--r--	t0b1nux/users	usr/include/GLES2/gl2.h
+-rw-r--r--	t0b1nux/users	usr/include/GLES2/gl2ext.h
+-rw-r--r--	t0b1nux/users	usr/include/GLES2/gl2platform.h
+drwxr-xr-x	t0b1nux/users	usr/include/GLES3/
+-rw-r--r--	t0b1nux/users	usr/include/GLES3/gl3.h
+-rw-r--r--	t0b1nux/users	usr/include/GLES3/gl31.h
+-rw-r--r--	t0b1nux/users	usr/include/GLES3/gl3ext.h
+-rw-r--r--	t0b1nux/users	usr/include/GLES3/gl3platform.h
+drwxr-xr-x	t0b1nux/users	usr/include/KHR/
+-rw-r--r--	t0b1nux/users	usr/include/KHR/khrplatform.h
+-rw-r--r--	t0b1nux/users	usr/include/gbm.h
+-rw-r--r--	t0b1nux/users	usr/include/xa_composite.h
+-rw-r--r--	t0b1nux/users	usr/include/xa_context.h
+-rw-r--r--	t0b1nux/users	usr/include/xa_tracker.h
+drwxr-xr-x	t0b1nux/users	usr/lib/
+drwxr-xr-x	t0b1nux/users	usr/lib/dri/
+-rwxr-xr-x	t0b1nux/users	usr/lib/dri/gallium_drv_video.la
+-rwxr-xr-x	t0b1nux/users	usr/lib/dri/gallium_drv_video.so
+-rwxr-xr-x	t0b1nux/users	usr/lib/dri/kms_swrast_dri.so
+-rwxr-xr-x	t0b1nux/users	usr/lib/dri/radeon_dri.so
+-rwxr-xr-x	t0b1nux/users	usr/lib/dri/radeonsi_dri.so
+-rwxr-xr-x	t0b1nux/users	usr/lib/dri/swrast_dri.so
+-rwxr-xr-x	t0b1nux/users	usr/lib/libEGL.la
+lrwxrwxrwx	t0b1nux/users	usr/lib/libEGL.so -> libEGL.so.1.0.0
+lrwxrwxrwx	t0b1nux/users	usr/lib/libEGL.so.1 -> libEGL.so.1.0.0
+-rwxr-xr-x	t0b1nux/users	usr/lib/libEGL.so.1.0.0
+-rwxr-xr-x	t0b1nux/users	usr/lib/libGL.la
+lrwxrwxrwx	t0b1nux/users	usr/lib/libGL.so -> libGL.so.1.2.0
+lrwxrwxrwx	t0b1nux/users	usr/lib/libGL.so.1 -> libGL.so.1.2.0
+-rwxr-xr-x	t0b1nux/users	usr/lib/libGL.so.1.2.0
+-rwxr-xr-x	t0b1nux/users	usr/lib/libGLESv1_CM.la
+lrwxrwxrwx	t0b1nux/users	usr/lib/libGLESv1_CM.so -> libGLESv1_CM.so.1.1.0
+lrwxrwxrwx	t0b1nux/users	usr/lib/libGLESv1_CM.so.1 -> libGLESv1_CM.so.1.1.0
+-rwxr-xr-x	t0b1nux/users	usr/lib/libGLESv1_CM.so.1.1.0
+-rwxr-xr-x	t0b1nux/users	usr/lib/libGLESv2.la
+lrwxrwxrwx	t0b1nux/users	usr/lib/libGLESv2.so -> libGLESv2.so.2.0.0
+lrwxrwxrwx	t0b1nux/users	usr/lib/libGLESv2.so.2 -> libGLESv2.so.2.0.0
+-rwxr-xr-x	t0b1nux/users	usr/lib/libGLESv2.so.2.0.0
+-rwxr-xr-x	t0b1nux/users	usr/lib/libOSMesa.la
+lrwxrwxrwx	t0b1nux/users	usr/lib/libOSMesa.so -> libOSMesa.so.8.0.0
+lrwxrwxrwx	t0b1nux/users	usr/lib/libOSMesa.so.8 -> libOSMesa.so.8.0.0
+-rwxr-xr-x	t0b1nux/users	usr/lib/libOSMesa.so.8.0.0
+-rwxr-xr-x	t0b1nux/users	usr/lib/libgbm.la
+lrwxrwxrwx	t0b1nux/users	usr/lib/libgbm.so -> libgbm.so.1.0.0
+lrwxrwxrwx	t0b1nux/users	usr/lib/libgbm.so.1 -> libgbm.so.1.0.0
+-rwxr-xr-x	t0b1nux/users	usr/lib/libgbm.so.1.0.0
+-rwxr-xr-x	t0b1nux/users	usr/lib/libglapi.la
+lrwxrwxrwx	t0b1nux/users	usr/lib/libglapi.so -> libglapi.so.0.0.0
+lrwxrwxrwx	t0b1nux/users	usr/lib/libglapi.so.0 -> libglapi.so.0.0.0
+-rwxr-xr-x	t0b1nux/users	usr/lib/libglapi.so.0.0.0
+-rwxr-xr-x	t0b1nux/users	usr/lib/libwayland-egl.la
+lrwxrwxrwx	t0b1nux/users	usr/lib/libwayland-egl.so -> libwayland-egl.so.1.0.0
+lrwxrwxrwx	t0b1nux/users	usr/lib/libwayland-egl.so.1 -> libwayland-egl.so.1.0.0
+-rwxr-xr-x	t0b1nux/users	usr/lib/libwayland-egl.so.1.0.0
+-rwxr-xr-x	t0b1nux/users	usr/lib/libxatracker.la
+lrwxrwxrwx	t0b1nux/users	usr/lib/libxatracker.so -> libxatracker.so.2.3.0
+lrwxrwxrwx	t0b1nux/users	usr/lib/libxatracker.so.2 -> libxatracker.so.2.3.0
+-rwxr-xr-x	t0b1nux/users	usr/lib/libxatracker.so.2.3.0
+drwxr-xr-x	t0b1nux/users	usr/lib/pkgconfig/
+-rw-r--r--	t0b1nux/users	usr/lib/pkgconfig/dri.pc
+-rw-r--r--	t0b1nux/users	usr/lib/pkgconfig/egl.pc
+-rw-r--r--	t0b1nux/users	usr/lib/pkgconfig/gbm.pc
+-rw-r--r--	t0b1nux/users	usr/lib/pkgconfig/gl.pc
+-rw-r--r--	t0b1nux/users	usr/lib/pkgconfig/glesv1_cm.pc
+-rw-r--r--	t0b1nux/users	usr/lib/pkgconfig/glesv2.pc
+-rw-r--r--	t0b1nux/users	usr/lib/pkgconfig/osmesa.pc
+-rw-r--r--	t0b1nux/users	usr/lib/pkgconfig/wayland-egl.pc
+-rw-r--r--	t0b1nux/users	usr/lib/pkgconfig/xatracker.pc
+drwxr-xr-x	t0b1nux/users	usr/lib/vdpau/
+lrwxrwxrwx	t0b1nux/users	usr/lib/vdpau/libvdpau_radeonsi.so -> libvdpau_radeonsi.so.1.0.0
+lrwxrwxrwx	t0b1nux/users	usr/lib/vdpau/libvdpau_radeonsi.so.1 -> libvdpau_radeonsi.so.1.0.0
+lrwxrwxrwx	t0b1nux/users	usr/lib/vdpau/libvdpau_radeonsi.so.1.0 -> libvdpau_radeonsi.so.1.0.0
+-rwxr-xr-x	t0b1nux/users	usr/lib/vdpau/libvdpau_radeonsi.so.1.0.0

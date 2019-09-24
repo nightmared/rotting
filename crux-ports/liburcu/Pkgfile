@@ -1,0 +1,17 @@
+# Description:	userspace RCU (read-copy-update) library
+# URL:	http://liburcu.org/
+# Maintainer:	Simon THOBY, simonthoby at live dot fr
+# Depend on: autoconf
+
+name=liburcu
+version=0.9.1
+release=1
+source=(https://github.com/urcu/userspace-rcu/archive/v$version.tar.gz)
+
+build() {
+	cd userspace-rcu-$version
+	./bootstrap
+	./configure --prefix=/usr
+	make
+	make DESTDIR=$PKG install
+}

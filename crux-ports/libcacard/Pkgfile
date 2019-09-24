@@ -1,0 +1,16 @@
+# Description:	library needed for QEMU
+URL:	http://qemu.org/
+# Maintainer:	Simon THOBY, simonthoby at live dot fr
+# Depends on:	
+
+name=libcacard
+version=2.5.2
+release=1
+source=(http://www.spice-space.org/download/$name/$name-$version.tar.xz)
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr
+	make
+	make DESTDIR=$PKG install
+}

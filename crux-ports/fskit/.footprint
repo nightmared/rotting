@@ -1,0 +1,53 @@
+drwxr-xr-x	t0b1nux/users	usr/
+drwxr-xr-x	t0b1nux/users	usr/include/
+drwxr-xr-x	t0b1nux/users	usr/include/fskit/
+-rw-r--r--	t0b1nux/users	usr/include/fskit/access.h
+-rw-r--r--	t0b1nux/users	usr/include/fskit/chmod.h
+-rw-r--r--	t0b1nux/users	usr/include/fskit/chown.h
+-rw-r--r--	t0b1nux/users	usr/include/fskit/close.h
+-rw-r--r--	t0b1nux/users	usr/include/fskit/closedir.h
+-rw-r--r--	t0b1nux/users	usr/include/fskit/common.h
+-rw-r--r--	t0b1nux/users	usr/include/fskit/create.h
+-rw-r--r--	t0b1nux/users	usr/include/fskit/debug.h
+-rw-r--r--	t0b1nux/users	usr/include/fskit/deferred.h
+-rw-r--r--	t0b1nux/users	usr/include/fskit/entry.h
+-rw-r--r--	t0b1nux/users	usr/include/fskit/fskit.h
+drwxr-xr-x	t0b1nux/users	usr/include/fskit/fuse/
+-rw-r--r--	t0b1nux/users	usr/include/fskit/fuse/fskit_fuse.h
+-rw-r--r--	t0b1nux/users	usr/include/fskit/getxattr.h
+-rw-r--r--	t0b1nux/users	usr/include/fskit/link.h
+-rw-r--r--	t0b1nux/users	usr/include/fskit/listxattr.h
+-rw-r--r--	t0b1nux/users	usr/include/fskit/mkdir.h
+-rw-r--r--	t0b1nux/users	usr/include/fskit/mknod.h
+-rw-r--r--	t0b1nux/users	usr/include/fskit/open.h
+-rw-r--r--	t0b1nux/users	usr/include/fskit/opendir.h
+-rw-r--r--	t0b1nux/users	usr/include/fskit/path.h
+-rw-r--r--	t0b1nux/users	usr/include/fskit/random.h
+-rw-r--r--	t0b1nux/users	usr/include/fskit/read.h
+-rw-r--r--	t0b1nux/users	usr/include/fskit/readdir.h
+-rw-r--r--	t0b1nux/users	usr/include/fskit/readlink.h
+-rw-r--r--	t0b1nux/users	usr/include/fskit/removexattr.h
+-rw-r--r--	t0b1nux/users	usr/include/fskit/rename.h
+-rw-r--r--	t0b1nux/users	usr/include/fskit/rmdir.h
+-rw-r--r--	t0b1nux/users	usr/include/fskit/route.h
+-rw-r--r--	t0b1nux/users	usr/include/fskit/setxattr.h
+-rw-r--r--	t0b1nux/users	usr/include/fskit/sglib.h
+-rw-r--r--	t0b1nux/users	usr/include/fskit/stat.h
+-rw-r--r--	t0b1nux/users	usr/include/fskit/statvfs.h
+-rw-r--r--	t0b1nux/users	usr/include/fskit/symlink.h
+-rw-r--r--	t0b1nux/users	usr/include/fskit/sync.h
+-rw-r--r--	t0b1nux/users	usr/include/fskit/trunc.h
+-rw-r--r--	t0b1nux/users	usr/include/fskit/unlink.h
+-rw-r--r--	t0b1nux/users	usr/include/fskit/util.h
+-rw-r--r--	t0b1nux/users	usr/include/fskit/utime.h
+-rw-r--r--	t0b1nux/users	usr/include/fskit/write.h
+drwxr-xr-x	t0b1nux/users	usr/lib/
+lrwxrwxrwx	t0b1nux/users	usr/lib/libfskit.so -> libfskit.so.1
+lrwxrwxrwx	t0b1nux/users	usr/lib/libfskit.so.1 -> libfskit.so.1.0.2
+-rwxr-xr-x	t0b1nux/users	usr/lib/libfskit.so.1.0.2
+lrwxrwxrwx	t0b1nux/users	usr/lib/libfskit_fuse.so -> libfskit_fuse.so.1
+lrwxrwxrwx	t0b1nux/users	usr/lib/libfskit_fuse.so.1 -> libfskit_fuse.so.1.0.2
+-rwxr-xr-x	t0b1nux/users	usr/lib/libfskit_fuse.so.1.0.2
+drwxr-xr-x	t0b1nux/users	usr/lib/pkgconfig/
+-rw-r--r--	t0b1nux/users	usr/lib/pkgconfig/fskit.pc
+-rw-r--r--	t0b1nux/users	usr/lib/pkgconfig/fskit_fuse.pc

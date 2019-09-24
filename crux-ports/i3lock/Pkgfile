@@ -1,0 +1,18 @@
+# Description:	simple screen locker
+# URL:	http://i3wm.org/i3lock/
+# Maintainer:	Simon THOBY, simonthoby at live dot fr
+# Depends on:	i3
+
+name=i3lock
+version=2.7
+release=3
+source=(http://i3wm.org/$name/$name-$version.tar.bz2)
+
+build() {
+	cd $name-$version
+	sed -i -e 's:login:system-auth:' i3lock.pam
+	make 
+	make DESTDIR=$PKG install
+	gzip i3lock.1
+	install -Dm644 i3lock.1.gz $PKG/usr/share/man/man1/i3lock.1.gz
+}
